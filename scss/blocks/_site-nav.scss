@@ -1,0 +1,32 @@
+.site-nav{
+    width: 100%;
+    padding: 21.5px 0;
+}
+.site-nav__box{
+    @include row;
+    @include between;
+
+}
+.site-nav__list{
+    @include list-none;
+    @include row;
+    gap: 30px;
+    margin-bottom: 0;
+}
+.site-nav__text{
+    font-size: 14px;
+    color: $balck;
+    font-weight: $font-normal;
+    margin-bottom: 0;
+}
+
+.site-nav__linK{
+    font-size: 12px;
+    color: #555;
+    @include text-dec;
+    @include uppercase;
+        transition: all 0.3s;
+        &:hover{
+            color: #bac34e;
+        }
+}

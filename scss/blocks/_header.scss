@@ -1,0 +1,28 @@
+.head {
+    max-width: 1450px; 
+    margin: auto;
+    background: #fff;
+    height: 100px;
+}
+.head__search-input-box{
+    width: 550px;    height: 45px;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+}
+.head__search-icon{
+    width: 50px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.head__search-btn{
+        width: 100px;
+        height: 100%;
+        border: 0;
+        font-size: 14px;
+        text-align: center;
+        color: $balck;
+        font-weight: $font-bold;
+        background-color: transparent;
+}

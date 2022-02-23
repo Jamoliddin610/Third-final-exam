@@ -1,0 +1,16 @@
+@mixin list-none {
+    list-style: none;
+}
+@mixin text-dec {
+    text-decoration: none;
+}
+@mixin row {
+    display: flex;
+    flex-flow: row wrap ;
+}
+@mixin between {
+    justify-content: space-between;
+}
+@mixin uppercase {
+    text-transform: uppercase;
+}
