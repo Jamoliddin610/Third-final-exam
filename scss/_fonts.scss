@@ -1,22 +1,16 @@
 @font-face {
     font-family: 'Mazzard Soft H';
-    src: url('../fonts/MazzardH-Bold.eot');
-    src: local('Mazzard H Bold'), local('MazzardH-Bold'),
-        url('../fonts/MazzardH-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MazzardH-Bold.woff2') format('woff2'),
-        url('../fonts/MazzardH-Bold.woff') format('woff'),
-        url('../fonts/MazzardH-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Mazzard Soft H';
-    src: url('../fonts/MazzardH-Italic.eot');
-    src: local('Mazzard H Italic'), local('MazzardH-Italic'),
-        url('../fonts/MazzardH-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MazzardH-Italic.woff2') format('woff2'),
-        url('../fonts/MazzardH-Italic.woff') format('woff'),
-        url('../fonts/MazzardH-Italic.ttf') format('truetype');
+    src: url('../fonts/MazzardSoftH-Regular.woff2') format('woff2'),
+        url('../fonts/MazzardSoftH-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mazzard Soft H ';
+    src: url('../fonts/MazzardSoftH-SemiBold.woff2') format('woff2'),
+        url('../fonts/MazzardSoftH-SemiBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }

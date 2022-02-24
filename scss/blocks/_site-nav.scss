@@ -27,6 +27,6 @@
     @include uppercase;
         transition: all 0.3s;
         &:hover{
-            color: #bac34e;
+            color: $hover-color;
         }
 }

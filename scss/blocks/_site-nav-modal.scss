@@ -1,0 +1,260 @@
+// response moda site nav modal
+.site-nav__modal {
+    width: 300px;
+    background-color: #0a472e;
+}
+
+.site-nav__close-btn {
+    width: 80px;
+    height: 46px;
+    position: absolute;
+    right: 0;
+    border: none;
+    background-color: transparent;
+
+    i,
+    span {
+        font-size: 14px;
+        font-weight: $font-normal;
+        line-height: 16px;
+        color: #bac34e;
+        text-transform: capitalize;
+    }
+
+}
+
+.site-nav__header {
+    width: 100%;
+    height: 47px;
+    position: relative;
+    display: block;
+    border-bottom: solid 0.5px #073522;
+
+}
+
+.site-nav__modal-list {
+    @include list-none;
+}
+
+.site-nav__modal-items {
+    border-bottom: solid 0.5px #073522;
+    transition: 0.3s all;
+
+    &:hover {
+        .site-nav__modal-link {
+            color: $hover-color;
+        }
+    }
+
+}
+
+.site-nav__modal-link {
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: $font-normal;
+    line-height: 16px;
+    color: $white;
+    @include text-dec;
+    text-transform: capitalize;
+}
+
+.site-nav__angle-btn {
+    width: 48px;
+    border: none;
+    border-left: solid 1px #073522;
+    background-color: transparent;
+
+    i {
+        color: $white;
+    }
+}
+
+.home-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    z-index: -1;
+    transform: translateX(-300px);
+    transition: 0.3s all;
+    background-color: #0a472e;
+}
+
+.shop-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    z-index: -1;
+    transform: translateX(-300px);
+    transition: 0.3s all;
+    background-color: #0a472e;
+}
+
+.page-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    z-index: -1;
+    transform: translateX(-300px);
+    transition: 0.3s all;
+    background-color: #0a472e;
+    overflow-y: scroll;
+
+}
+
+.open-modals {
+    transform: translateX(0);
+    z-index: 999999999;
+}
+
+.open-modals-shop {
+    transform: translateX(0);
+    z-index: 9999999999;
+}
+
+.open-modals-page {
+    transform: translateX(0);
+    z-index: 9999999999;
+}
+
+.modals-header {
+    width: 100%;
+    height: 47px;
+    border-bottom: solid 1px #073522;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.close-modal-btn {
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.home-modal__list {
+    @include list-none;
+
+    .home-modal__items {
+        padding: 15px;
+        border-bottom: solid 1px #073522;
+        width: 100%;
+
+        &:hover {
+            .home-modal__link {
+                color: $hover-color;
+            }
+        }
+
+        .home-modal__link {
+            color: $white;
+            font-weight: $font-normal;
+            font-size: 14px;
+            @include text-dec;
+            text-transform: capitalize;
+            transition: 0.3s;
+
+        }
+    }
+}
+
+.shop-modal__contents {
+    border-bottom: solid 1px #073522;
+
+    span {
+        padding: 15px;
+        color: $white;
+        font-size: 14px;
+        font-weight: $font-normal;
+    }
+
+    .shop-modal__content-btn {
+        width: 48px;
+        height: 50px;
+        display: inline-block;
+        border: none;
+        border-left: solid 1px #073522;
+        background-color: transparent;
+
+        i {
+            color: $white;
+        }
+
+    }
+}
+
+.content-elements {
+    width: 100%;
+    height: 0;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.open-content {
+    height: auto;
+}
+
+.content-elments__list {
+    @include list-none;
+
+}
+
+.shop-modal__content-btn {
+    i {
+        transition: 0.3s;
+    }
+}
+
+.content-element__items {
+    padding: 15px;
+    border-bottom: solid 1px #073522;
+
+    .content-element__link {
+        font-size: 14px;
+        color: $white;
+        @include text-dec;
+    }
+}
+
+.btn-rotate {
+    i {
+        transform: rotate(180deg);
+    }
+}
+
+.page-modal__items {
+    padding: 15px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.page-modal__list {
+    @include list-none;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
