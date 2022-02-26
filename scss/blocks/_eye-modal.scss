@@ -1,0 +1,133 @@
+.modal-dialog {
+    min-width: 1030px !important;
+    height: 565px !important;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+}
+
+.modal-button-close {
+    border: none;
+    background-color: transparent;
+
+    i {
+        font-size: 24px;
+        font-weight: 900;
+        color: $balck;
+        opacity: 0.5;
+    }
+
+    &:hover {
+        i {
+            opacity: 0.8;
+        }
+    }
+
+}
+
+
+.modal-title {
+    text-transform: uppercase;
+    color: $balck;
+    font-size: 22px;
+    font-weight: $font-normal;
+    line-height: 1.1;
+}
+
+.modal-price {
+    color: #e0bf96;
+    font-size: 24px;
+    font-weight: $font-bold;
+}
+
+.modal-desc {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.modal-input {
+    width: 115px;
+    height: 46px;
+    border: 1px solid rgba(170, 170, 170, 0.466);
+    border-radius: 30px;
+    padding-left: 20px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.modal-card-link {
+    display: inline-block;
+    height: 46px;
+    line-height: 49px;
+    padding: 0 55px;
+    font-size: 12px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: $hover-color;
+    transition: all 0.3s;
+    border-color: #bac34e;
+    border-radius: 30px;
+    @include text-dec;
+
+    &:hover {
+        background-color: #0a472e;
+        color: $white;
+    }
+
+}
+
+.modal-link-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 20px;
+
+    a {
+        @include text-dec;
+        font-size: 14px;
+        font-weight: $font-normal;
+        color: $balck;
+    }
+}
+
+.modal-img {
+    border: 1px solid rgba(170, 170, 170, 0.315);
+    border-radius: 5px;
+}
+
+.modal-small-img {
+    width: 80px;
+    height: 70px;
+    object-fit: cover;
+    border: solid 1px $hover-color;
+    border-radius: 5px;
+    transform: translateY(15px);
+}
+
+.modal-body{
+    padding-bottom: 120px;
+}
+.modal-list__icon {
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+
+.modal-list__icon:hover {
+    transform: scale(1.2);
+}
+
+.modal-list__icon--second {
+    color: #55acee;
+}
+
+.modal-list__icon--third {
+    color: #cb2027;
+}

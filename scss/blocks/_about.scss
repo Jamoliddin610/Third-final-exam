@@ -1,0 +1,83 @@
+.about__hero {
+    width: 100%;
+
+    background-image: url(https://cdn.shopify.com/s/files/1/0740/5717/files/freshio_bg-breadcrumb.jpg?v=1605078920);
+    background-color: rgb(0, 0, 0);
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.about__hero-link {
+    font-size: 14px;
+    color: $rerely-color;
+    margin: 0 5px;
+    @include text-dec;
+    transition: 0.3s all;
+
+    &:hover {
+        color: $hover-color;
+    }
+
+}
+
+.about__hero-title-box {
+    display: flex;
+    align-items: center;
+
+    i {
+        display: inline-block;
+        color: #aaa;
+        margin: 0;
+        font-size: 10px;
+    }
+}
+
+.about-contact__box {
+    @include row;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.contact-box {
+    margin: 0 100px 0 0;
+}
+
+.head__contact-apps-box {
+    margin: 0 20px
+}
+
+.head__contact-list {
+    @include row;
+    @include list-none;
+    gap: 20px;
+
+    i {
+        color: $hover-color;
+        font-size: 1.2rem;
+        transition: 0.3s all;
+
+        &:hover {
+            color: rgba(0, 0, 255, 0.664);
+        }
+    }
+}
+
+.head__contact-img {
+    margin-left: auto;
+}
+
+@media screen and (max-width:992px) {
+    .head__contact-box {
+        display: none;
+    }
+
+    .about__contents-box {
+        flex-direction: column;
+    }
+
+    .about-main {
+        margin-bottom: 100px;
+    }
+}

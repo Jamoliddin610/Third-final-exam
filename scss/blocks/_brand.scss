@@ -1,0 +1,69 @@
+.brand {
+    max-width: 1450px;
+    margin: auto;
+    background-color: $white;
+    padding-bottom: 60px;
+}
+.brand__box{
+    width: 100%;
+    padding-top: 60px;
+    border-top: solid 1px #e5e5e5;
+}
+.brand__list{
+    @include list-none;
+    @include row;
+    margin: 0 -15px;
+}
+.brand__items{
+    width: 220px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: 0.4s all;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .brand__items:nth-child(5){
+        display: none;
+    }
+     .brand__items:nth-child(6) {
+         display: none;
+     }
+    .brand__items{
+        width: 245px;
+    }
+}
+@media screen and (max-width:768px) {
+    .adverts{
+        padding: 0;
+    }
+    .adverts__box{
+        margin-bottom: 0 !important;
+    }
+    .brand__box{
+        padding-top: 30px;
+    }
+    .brand__items:nth-child(4){
+        display: none;
+    }
+}
+@media screen  and (max-width:576px){
+    .brand__items{
+        width: 188px;
+    }
+}
+@media  screen and (max-width:450px) {
+    .brand__items:nth-child(3){
+        display: none;
+    }
+    .brand__items{
+        width: 50%;
+    }
+    
+}
+// alhamdulillah 

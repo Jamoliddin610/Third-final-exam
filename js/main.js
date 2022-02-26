@@ -16,6 +16,7 @@ let contentthird = document.getElementById('third-content');
 let opencontentfour = document.getElementById('open-content-four');
 let contentfour = document.getElementById('four-content');
 
+
 openHomeModal.addEventListener('click',function(){
     homeModal.classList.add('open-modals')
 });
@@ -73,4 +74,20 @@ opencontentfour.addEventListener('click',function(){
     opencontentsecond.classList.remove('btn-rotate');
     contentthird.classList.remove('open-content');
     opencontentthird.classList.remove('btn-rotate');
+})
+
+let openSearchBox = document.getElementById('open-search');
+let SearchBox = document.getElementById('search-modal');
+let SearchIcon = document.getElementById('search-icon')
+var num = 0
+openSearchBox.addEventListener('click',function(){
+    SearchBox.classList.toggle('open-search-modal');
+    if (num==0) {
+        SearchIcon.className= 'fal fa-close';
+        num++
+    }else{
+        SearchIcon.className = 'fal fa-search';
+        num--;
+    }
+    
 })

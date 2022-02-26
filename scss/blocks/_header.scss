@@ -1,7 +1,11 @@
 .head {
     max-width: 1450px;
     margin: auto;
-    background: #fff;
+    background: $white;
+}
+
+.head-about {
+    max-width: 100%;
 }
 
 .head__search-input-box {
@@ -41,10 +45,12 @@
     border: none;
     outline: none;
     background-color: transparent;
+
 }
-.head__search-input::placeholder{
-        font-size: 14px;
-        color: #aaa;
+
+.head__search-input::placeholder {
+    font-size: 14px;
+    color: #aaa;
 }
 
 .head__wrapper {
@@ -52,14 +58,16 @@
     align-items: center;
     padding: 25px 0;
 }
-.head__modalbtn-list{
+
+.head__modalbtn-list {
     @include row;
     @include list-none;
     float: right;
     gap: 16px;
     margin-bottom: 0;
 }
-.head-btn{
+
+.head-btn {
     width: 44px;
     height: 44px;
     line-height: 44px;
@@ -69,14 +77,16 @@
     transition: all 0.3s;
     cursor: pointer;
     border: none;
-    &:hover{
+
+    &:hover {
         background-color: $hover-color;
         color: $white;
     }
 }
 
-.head__btn-shop{
+.head__btn-shop {
     background-color: #f3e4dc;
+
     &::after {
         content: '0';
         width: 20px;
@@ -93,60 +103,74 @@
         right: -9px;
     }
 }
-.head__btn-heart{
+
+.head__btn-heart {
     background-color: #f6f3e3;
     line-height: 46px;
-    &::after{
+
+    &::after {
         content: '0';
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 20px;
-            font-size: 10px;
-            font-weight: 400;
-            color: #fff;
-            background-color: #e0bf96;
-            position: absolute;
-            top: 0;
-            right: -9px;
-    }}
-.head__btn-user{
-        background-color: #e8f8f7;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        font-size: 10px;
+        font-weight: 400;
+        color: #fff;
+        background-color: #e0bf96;
+        position: absolute;
+        top: 0;
+        right: -9px;
+    }
 }
-.head__nav-modal-box{
+
+.head__btn-user {
+    background-color: #e8f8f7;
+}
+
+.head__nav-modal-box {
     display: none;
 }
+
 @media screen and(max-width:992px) {
-    .head__wrapper{
+    .head__wrapper {
         justify-content: space-between;
     }
-    .site-nav{
+
+    .site-nav {
         display: none;
     }
-    .head__search-input-box{
+
+    .head__search-input-box {
         display: none;
     }
+
     .head__btn-heart,
-    .head__btn-user{
+    .head__btn-user {
         display: none;
     }
-    .head__logo-img{
+
+    .head__logo-img {
         margin: 0 auto;
     }
-    .head__input-wrapper{
+
+    .head__input-wrapper {
         display: none;
     }
-    .head__nav-modal-box{
+
+    .head__nav-modal-box {
         height: 100%;
         display: block;
     }
-    .head__logo-img{
+
+    .head__logo-img {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .head__btn-show-nav{
+
+    .head__btn-show-nav {
         width: 40px;
         height: 40px;
         display: flex;
@@ -156,9 +180,63 @@
         outline: none;
         background-color: transparent;
         @include text-dec;
-        i{
+
+        i {
             font-size: 20px;
             color: $rerely-color;
         }
     }
+}
+
+.head__contact-box {
+    @include row;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 190px;
+
+    i {
+        font-size: 36px;
+        color: $hover-color;
+        float: left;
+        margin-right: 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .head__contact-title {
+        font-size: 12px;
+        font-weight: $font-bold;
+        letter-spacing: 2.4px;
+        color: $balck;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .head__contact-text {
+        margin-bottom: 0;
+        color: $hover-color;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.nav-bar__box-wrapper {
+    width: 100%;
+    background-color: #0a472e;
+}
+
+.about-dropdown {
+    margin: 5.5px 0;
+    padding: 16px 30px !important;
+    text-transform: none;
+    font-size: 14px;
+    color: #FFF;
+    background-color: $hover-color !important;
+    border-radius: 30px;
+}
+
+.about-line {
+    display: none !important;
 }
