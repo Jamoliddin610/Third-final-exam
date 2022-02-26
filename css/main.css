@@ -399,6 +399,12 @@ body {
   background-color: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  .body__inner {
+    display: none;
+  }
+}
+
 .container {
   width: 1320px;
   max-width: 100%;
@@ -2455,7 +2461,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .response-navbox.res-nav {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;

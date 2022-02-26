@@ -27,3 +27,8 @@ body{
     background-image: none;
     background-color: $white;
 }
+@media screen and (max-width:992px) {
+    .body__inner{
+        display: none;
+    }
+}
